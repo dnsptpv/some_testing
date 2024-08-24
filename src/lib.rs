@@ -53,7 +53,7 @@ impl Plugin for GamePlugin {
 
 fn draw(mut painter: ShapePainter) {
     // Draw a circle
-    painter.cap = Cap::Round;
-    painter.line(Vec3::new(-1.0, -1.0, 0.0), Vec3::new(1.0, -1.0, 0.0));
-
+    painter.corner_radii = Vec4::new(0.0, 0.2, 0.35, 0.0);
+    painter.translate(-Vec3::Y);
+    painter.rect(Vec2::new(2.0, 0.7));
 }
