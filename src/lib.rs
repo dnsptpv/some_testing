@@ -51,7 +51,7 @@ impl Plugin for GamePlugin {
     }
 }
 
-fn draw(mut painter: ShapePainter) {
+pub fn draw(mut painter: ShapePainter) {
     // Draw a circle
     painter.corner_radii = Vec4::new(0.0, 0.2, 0.35, 0.0);
     painter.translate(-Vec3::Y);
