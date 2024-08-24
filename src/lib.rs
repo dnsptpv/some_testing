@@ -42,8 +42,7 @@ impl Plugin for GamePlugin {
             ActionsPlugin,
             InternalAudioPlugin,
             PlayerPlugin,
-        ))
-        .add_systems(Update, draw);
+        ));
 
         #[cfg(debug_assertions)]
         {
