@@ -9,6 +9,8 @@ use bevy::DefaultPlugins;
 use bevy_game::GamePlugin; // ToDo: Replace bevy_game with your new crate name.
 use std::io::Cursor;
 use winit::window::Icon;
+use bevy_vector_shapes::prelude::*;
+
 
 fn main() {
     App::new()
