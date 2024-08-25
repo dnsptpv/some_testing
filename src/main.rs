@@ -36,6 +36,7 @@ fn main() {
                 }),
         )
         .add_plugins(GamePlugin)
+        .add_plugins(ShapePlugin::default())
         .add_systems(Startup, set_window_icon)
         .add_systems(Update, draw)
         .run();
