@@ -52,7 +52,7 @@ fn draw(mut painter: ShapePainter) {
 }
 // Sets the icon on windows and X11
 fn set_window_icon(
-    mut commands: command,
+    mut commands: Commands,
     windows: NonSend<WinitWindows>,
     primary_window: Query<Entity, With<PrimaryWindow>>,
 ) {
