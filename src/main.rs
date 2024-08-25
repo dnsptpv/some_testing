@@ -52,9 +52,14 @@ fn draw(mut painter: ShapePainter) {
 }
 // Sets the icon on windows and X11
 fn set_window_icon(
+    mut commands: command,
     windows: NonSend<WinitWindows>,
     primary_window: Query<Entity, With<PrimaryWindow>>,
 ) {
+    commands.spawn(Camera3dBundle {
+        transform: Transform::from_xyz(0., 0., 16.).looking_at(Vec3::ZERO, Vec3::Y),
+        ..default()
+    });
     let primary_entity = primary_window.single();
     let Some(primary) = windows.get_window(primary_entity) else {
         return;
