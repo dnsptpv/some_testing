@@ -37,11 +37,11 @@ fn main() {
         )
         .add_plugins(GamePlugin)
         .add_systems(Startup, set_window_icon)
-        .add_systems(Update, draw)
+        //.add_systems(Update, draw)
         .run();
 }
 
-fn draw(mut painter: ShapePainter) {
+fn _draw(mut painter: ShapePainter) {
     painter.corner_radii = Vec4::splat(0.2);
     painter.rect(Vec2::new(2.0, 0.7));
 }
