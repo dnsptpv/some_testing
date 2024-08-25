@@ -44,7 +44,7 @@ fn main() {
 
 fn draw(mut painter: ShapePainter) {
     //painter.corner_radii = Vec4::splat(0.2);
-    painter.set_translation(Vec3::NEG_Z);
+    painter.set_translation(Vec3::Z);
     painter.rect(Vec2::new(1.0, 0.7));
     painter.rect(Vec2::new(10., 50.));
     painter.circle(0.1);
