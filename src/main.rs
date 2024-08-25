@@ -2,7 +2,7 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 use bevy::asset::AssetMetaCheck;
-use bevy::prelude::*;
+use bevy::{color::palettes::css::*, prelude::*};
 use bevy::window::PrimaryWindow;
 use bevy::winit::WinitWindows;
 use bevy::DefaultPlugins;
@@ -44,6 +44,7 @@ fn main() {
 
 fn draw(mut painter: ShapePainter) {
     //painter.corner_radii = Vec4::splat(0.2);
+    painter.set_color(MIDNIGHT_BLUE.pastel());
     painter.set_translation(Vec3::Z);
     painter.rect(Vec2::new(1.0, 0.7));
     painter.rect(Vec2::new(10., 50.));
