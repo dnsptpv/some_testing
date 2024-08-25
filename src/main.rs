@@ -47,7 +47,7 @@ fn draw(mut painter: ShapePainter) {
     painter.set_translation(Vec3::NEG_Z);
     painter.rect(Vec2::new(1.0, 0.7));
     painter.rect(Vec2::new(10., 50.));
-    painte.circle(0.1);
+    painter.circle(0.1);
 }
 // Sets the icon on windows and X11
 fn set_window_icon(
