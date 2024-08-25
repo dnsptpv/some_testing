@@ -43,8 +43,8 @@ fn main() {
 }
 
 fn draw(mut painter: ShapePainter) {
-    painter.corner_radii = Vec4::splat(0.2);
-    painter.rect(Vec2::new(2.0, 0.7));
+    ()//painter.corner_radii = Vec4::splat(0.2);
+    //painter.rect(Vec2::new(2.0, 0.7));
 }
 // Sets the icon on windows and X11
 fn set_window_icon(
