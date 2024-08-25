@@ -37,7 +37,7 @@ fn main() {
         )
         .add_plugins(GamePlugin)
         .add_systems(Startup, set_window_icon)
-        .add_systems(Update, draw)
+       // .add_systems(Update, draw)
         .run();
 }
 
