@@ -3,13 +3,13 @@
 //mod actions;
 //mod audio;
 //mod loading;
-mod menu;
+//mod menu;
 //mod player;
 
 //use crate::actions::ActionsPlugin;
 //use crate::audio::InternalAudioPlugin;
 //use crate::loading::LoadingPlugin;
-use crate::menu::MenuPlugin;
+//use crate::menu::MenuPlugin;
 //use crate::player::PlayerPlugin;
 
 use bevy::app::App;
@@ -34,13 +34,13 @@ pub struct GamePlugin;
 
 impl Plugin for GamePlugin {
     fn build(&self, app: &mut App) {
-        app.init_state::<GameState>().add_plugins((
+        //app.init_state::<GameState>();//.add_plugins((
            // LoadingPlugin,
-            MenuPlugin,
+            //MenuPlugin,
            // ActionsPlugin,
            // InternalAudioPlugin,
            // PlayerPlugin,
-        ));
+        //));
 
         #[cfg(debug_assertions)]
         {
